@@ -1,6 +1,6 @@
 class Dog
   
-  attr_accessor :name
+  attr :name
   
   @@all = []
   
@@ -13,8 +13,8 @@ class Dog
     @@all.clear
   end
   
-  def self.all                    #iterate into array of instances and use .name method
-    @@all.each { |dog| puts dog.name } #from accessor to pull name from each instance
+  def self.all
+    @@all.each { |dog| puts dog.name }
   end
   
 end
